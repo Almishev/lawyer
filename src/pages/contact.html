@@ -1,0 +1,73 @@
+---
+layout: 'base.html'
+description: 'Контакти с адвокатска кантора Колджиеви'
+metaTitle: 'Контакти - Адвокатска кантора Колджиеви'
+tagTitle: 'Contact'
+preloadImg: '/images/cabinets2-1920w.webp'
+preloadCSS: '/css/contact.css'
+permalink: 'contact/'
+eleventyNavigation:
+    key: Contact
+    order: 600
+---
+
+<!-- Enter html code below -->
+
+<!-- ============================================ -->
+<!--                    LANDING                   -->
+<!-- ============================================ -->
+
+<section id="int-hero">
+  <h1 id="home-h">Контакти</h1>
+  {% image './src/images/cabinets2.jpg', 'law office', '', 'lazy', '(max-width: 400px) 400px, (max-width: 850px) 850px, 1920px'%}
+</section>
+
+<!-- ============================================ -->
+<!--                Contact Form                  -->
+<!-- ============================================ -->
+
+<section id="cs-contact">
+  <div class="cs-container">
+    <form id="cs-form" name="Contact Form" method="post">
+      <div class="cs-content">
+        <span class="cs-topper">Контакт</span>
+        <h2 class="cs-title">Свържете се с нас</h2>
+        <p class="cs-text">
+                    За въпроси и консултации, моля попълнете формуляра по-долу и ние ще се свържем с вас възможно най-скоро.
+                </p>
+      </div>
+      <label>
+                Име
+                <input required type="text" id="name" name="name" placeholder="Вашето име">
+      </label>
+      <label>
+                Имейл
+                <input required type="email" id="email" name="email" placeholder="Вашият имейл">
+      </label>
+      <label>
+                Телефон
+                <input required type="tel" id="phone" name="phone" placeholder="Вашият телефон">
+      </label>
+      
+      <label class="cs-label-message">
+                Съобщение
+                <textarea required name="message" id="message" placeholder="Напишете вашето съобщение..."></textarea>
+      </label>
+      <button class="cs-button-solid" type="submit">Изпратете съобщение</button>
+    </form>
+    <div class="cs-right-section">
+      <!--Email-->
+      <span class="cs-header">Имейл</span>
+      <a class="cs-link" href="mailto:info@koljdievi.com">info@koljdievi.com</a>
+      <!--Phone-->
+      <span class="cs-header">Телефон</span>
+      <a class="cs-link" href="tel:+359-555-1234">+359 555 1234</a>
+      <!--Address-->
+      <span class="cs-header">Адрес</span>
+      <a class="cs-link" href="https://maps.google.com/?q=ул.+Иван+Вазов+10,+Гоце+Делчев" target="_blank" rel="noopener">ул. Иван Вазов 10, <span class="cs-block">Гоце Делчев, България</span></a>
+
+      <!-- Background Image-->
+      {% image './src/images/skyscraper.jpg', 'law office', '', 'lazy'%}
+    </div>
+  </div>
+</section>

@@ -1,0 +1,72 @@
+---
+layout: 'base.html'
+description: "Научете повече за адвокатска кантора Колджиеви и нашата мисия"
+metaTitle: 'За нас - Адвокатска кантора Колджиеви'
+tagTitle: 'About'
+preloadImg: '/images/cabinets2-1920w.webp'
+preloadCSS: '/css/about.css'
+permalink: 'about/'
+eleventyNavigation:
+    key: About Us
+    order: 200
+---
+
+<!-- Enter html code below -->
+
+<!-- ============================================ -->
+<!--                    LANDING                   -->
+<!-- ============================================ -->
+
+<section id="int-hero">
+  <h1 id="home-h">За нас</h1>
+  {% image './src/images/cabinets2.jpg', 'law office', '', 'lazy', '(max-width: 850px) 850px, 1920px'%}
+</section>
+
+<!-- ============================================ -->
+<!--                 Side By Side                 -->
+<!-- ============================================ -->
+
+<section id="sbs">
+  <div class="cs-container">
+    <!-- Left Image Section -->
+    <div class="cs-left">
+      {% image './src/images/lawer-1.jpg', 'law office', 'cs-picture cs-picture1', 'lazy'%}
+      {% image './src/images/lawer5.jpg', 'law office', 'cs-picture cs-picture2', 'lazy'%}
+    </div>
+    <!-- Right Content Section-->
+    <div class="cs-right">
+      <span class="cs-topper">За нас</span>
+      <h2 class="cs-title">Адвокатска кантора Колджиеви</h2>
+      <p class="cs-text">
+        Адвокатска кантора Колджиеви е основана от сестрите Кристина и Милена Колджиеви. С дългогодишен опит в различни области на правото, ние предоставяме висококачествени правни услуги на нашите клиенти.
+      </p>
+      <p class="cs-text">
+        Нашата мисия е да защитаваме правата и интересите на нашите клиенти, като им предоставяме персонализирани и професионални правни решения. Винаги се стремим към най-добрите резултати и пълна удовлетвореност на клиентите.
+      </p>
+      <div class="cs-flex-group">
+        <p class="cs-flex-p">
+          С ангажимент към етика и професионализъм, ние работим усилено, за да осигурим надеждни и ефективни правни услуги.
+        </p>
+        <span class="cs-name">Кристина и Милена Колджиеви</span>
+        <span class="cs-job">Основатели</span>
+        <img class="cs-quote-icon" loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/SideBySide/quote-white.svg" alt="quote" width="136" height="77">
+      </div>
+      <a href="/contact" class="button-solid">Свържете се с нас</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================ -->
+<!--             Final Call to Action             -->
+<!-- ============================================ -->
+
+<section id="cta">
+  <div class="container">
+    <h2 class="title">Свържете се с нас <br> още днес</h2>
+    <p>
+      За повече информация или правна консултация, не се колебайте да се свържете с нас. Ние сме тук, за да ви помогнем във всяка правна ситуация.
+    </p>
+    <a href="/contact" class="button-solid">Свържете се с нас</a>
+  </div>
+  {% image './src/images/cabinets2.jpg', 'law office', '', 'lazy', '(max-width: 400px) 400px, (max-width: 850px) 850px, 1920px'%}
+</section>
